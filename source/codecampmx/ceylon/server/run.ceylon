@@ -27,5 +27,5 @@ shared void run() {
             conns;
         }
     };
-    server.start(SocketAddress("localhost", port),
+    server.startInBackground(SocketAddress("localhost", port),
         Options { sessionId = "codecampmx-ceylon"; });}
